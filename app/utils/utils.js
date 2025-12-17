@@ -16,7 +16,7 @@ export const bannerContent = [
 export const navItems = [
 	{ name: 'Home', href: '/', icon: 'lucide:home' },
 	{ name: 'Programs', href: '/programs', icon: 'lucide:book-open' },
-	{ name: 'Curriculum', href: '/curriculum', icon: 'lucide:graduation-cap' },
+	{ name: 'About', href: '/about-us', icon: 'lucide:info' },
 	// { name: 'Instructors', href: '/instructors', icon: 'lucide:users' },
 	{ name: 'Success Stories', href: '/success', icon: 'lucide:trophy' },
 	{ name: 'Apply Now', href: '/apply', icon: 'lucide:rocket' },
@@ -81,6 +81,69 @@ export const courses = [
 		students: '1,200',
 		price: '₦20,000',
 		category: 'Development',
+		// Additional details for the details page
+		longDescription:
+			'Master the art of frontend development with our comprehensive program. Learn to build stunning, responsive web applications using HTML5, CSS3, JavaScript, and modern frameworks. This course covers everything from basic web fundamentals to advanced frontend architecture.',
+		outcomes: [
+			'Build responsive websites from scratch',
+			'Master modern JavaScript (ES6+)',
+			'Create interactive user interfaces',
+			'Implement best practices and accessibility standards',
+			'Work with CSS frameworks and preprocessors',
+			'Deploy production-ready applications',
+		],
+		curriculum: [
+			{
+				week: 'Week 1-3',
+				title: 'HTML & CSS Fundamentals',
+				topics: [
+					'HTML5 semantic elements',
+					'CSS Grid & Flexbox',
+					'Responsive design principles',
+					'CSS animations',
+				],
+			},
+			{
+				week: 'Week 4-7',
+				title: 'JavaScript Essentials',
+				topics: [
+					'ES6+ features',
+					'DOM manipulation',
+					'Async programming',
+					'API integration',
+				],
+			},
+			{
+				week: 'Week 8-10',
+				title: 'Modern Frontend Tools',
+				topics: [
+					'Git & GitHub',
+					'NPM & build tools',
+					'CSS frameworks',
+					'Testing basics',
+				],
+			},
+			{
+				week: 'Week 11-12',
+				title: 'Capstone Project',
+				topics: [
+					'Real-world project',
+					'Code review',
+					'Deployment',
+					'Portfolio building',
+				],
+			},
+		],
+		prerequisites: [
+			'Basic computer skills',
+			'No prior coding experience required',
+		],
+		instructor: {
+			name: 'Sarah Johnson',
+			role: 'Senior Frontend Engineer',
+			bio: '8+ years at Google and Meta',
+			image: '/instructor-1.jpg',
+		},
 	},
 	{
 		id: 2,
@@ -93,6 +156,60 @@ export const courses = [
 		students: '980',
 		price: '₦20,000',
 		category: 'Development',
+		longDescription:
+			'Dive deep into backend development and learn to build scalable, secure server-side applications. Choose between Python or JavaScript and master databases, APIs, authentication, and deployment.',
+		outcomes: [
+			'Build RESTful APIs from scratch',
+			'Design and implement databases',
+			'Implement user authentication & authorization',
+			'Deploy scalable backend applications',
+			'Work with cloud services',
+			'Follow security best practices',
+		],
+		curriculum: [
+			{
+				week: 'Week 1-3',
+				title: 'Backend Fundamentals',
+				topics: [
+					'Server-side programming',
+					'HTTP & REST',
+					'Node.js/Python basics',
+					'Version control',
+				],
+			},
+			{
+				week: 'Week 4-7',
+				title: 'Databases & APIs',
+				topics: [
+					'SQL & NoSQL databases',
+					'API design',
+					'CRUD operations',
+					'Data modeling',
+				],
+			},
+			{
+				week: 'Week 8-10',
+				title: 'Authentication & Security',
+				topics: ['JWT & sessions', 'Password hashing', 'OAuth', 'API security'],
+			},
+			{
+				week: 'Week 11-12',
+				title: 'Deployment & DevOps',
+				topics: [
+					'Cloud deployment',
+					'CI/CD basics',
+					'Monitoring',
+					'Final project',
+				],
+			},
+		],
+		prerequisites: ['Basic programming knowledge helpful but not required'],
+		instructor: {
+			name: 'Michael Chen',
+			role: 'Lead Backend Engineer',
+			bio: '10+ years at Amazon and Shopify',
+			image: '/instructor-2.jpg',
+		},
 	},
 	{
 		id: 3,
@@ -105,6 +222,65 @@ export const courses = [
 		students: '1,450',
 		price: '₦20,000',
 		category: 'Frontend',
+		longDescription:
+			'Become a React expert and build modern, performant web applications. Learn hooks, state management, routing, and best practices used by industry leaders.',
+		outcomes: [
+			'Build complex React applications',
+			'Master React Hooks and state management',
+			'Implement routing and navigation',
+			'Optimize performance',
+			'Work with Context API and Redux',
+			'Test React components',
+		],
+		curriculum: [
+			{
+				week: 'Week 1-2',
+				title: 'React Fundamentals',
+				topics: [
+					'Components & Props',
+					'State & Events',
+					'Lists & Keys',
+					'Forms',
+				],
+			},
+			{
+				week: 'Week 3-4',
+				title: 'Advanced Hooks',
+				topics: [
+					'useState & useEffect',
+					'Custom hooks',
+					'useContext',
+					'useReducer',
+				],
+			},
+			{
+				week: 'Week 5-6',
+				title: 'State Management & Routing',
+				topics: [
+					'React Router',
+					'Redux basics',
+					'Context API',
+					'API integration',
+				],
+			},
+			{
+				week: 'Week 7-8',
+				title: 'Advanced Patterns',
+				topics: [
+					'Performance optimization',
+					'Testing',
+					'Best practices',
+					'Final project',
+				],
+			},
+		],
+		prerequisites: ['HTML, CSS, and JavaScript knowledge required'],
+		instructor: {
+			name: 'Emily Rodriguez',
+			role: 'React Specialist',
+			bio: 'Former React team member at Meta',
+			image: '/instructor-3.jpg',
+		},
 	},
 	{
 		id: 4,
@@ -117,6 +293,60 @@ export const courses = [
 		students: '870',
 		price: '₦20,000',
 		category: 'Frontend',
+		longDescription:
+			'Master Next.js and build production-ready, SEO-optimized web applications. Learn server-side rendering, static generation, API routes, and deployment strategies.',
+		outcomes: [
+			'Build full-stack Next.js applications',
+			'Implement SSR and SSG',
+			'Create API routes',
+			'Optimize for SEO and performance',
+			'Deploy to Vercel and other platforms',
+			'Work with Next.js 14+ features',
+		],
+		curriculum: [
+			{
+				week: 'Week 1-2',
+				title: 'Next.js Fundamentals',
+				topics: [
+					'Pages & Routing',
+					'App Router',
+					'Data fetching',
+					'Images & Fonts',
+				],
+			},
+			{
+				week: 'Week 3-4',
+				title: 'Rendering Strategies',
+				topics: ['SSR vs SSG', 'ISR', 'Client-side rendering', 'Streaming'],
+			},
+			{
+				week: 'Week 5-6',
+				title: 'API Routes & Database',
+				topics: [
+					'API development',
+					'Database integration',
+					'Authentication',
+					'Middleware',
+				],
+			},
+			{
+				week: 'Week 7-8',
+				title: 'Production & Deployment',
+				topics: [
+					'Performance optimization',
+					'SEO best practices',
+					'Deployment',
+					'Final project',
+				],
+			},
+		],
+		prerequisites: ['React.js knowledge required', 'JavaScript proficiency'],
+		instructor: {
+			name: 'David Kim',
+			role: 'Full-Stack Developer',
+			bio: 'Next.js expert with 6+ years experience',
+			image: '/instructor-4.jpg',
+		},
 	},
 ];
 
@@ -239,4 +469,38 @@ export const socialLinks = [
 	},
 	{ name: 'Facebook', icon: 'lucide:facebook', href: 'https://facebook.com' },
 	{ name: 'YouTube', icon: 'lucide:youtube', href: 'https://youtube.com' },
+];
+
+export const stats = [
+	{ value: '5,000+', label: 'Students Trained' },
+	{ value: '50+', label: 'Expert Instructors' },
+	{ value: '20+', label: 'Industry Partners' },
+	{ value: '95%', label: 'Success Rate' },
+];
+
+export const values = [
+	{
+		icon: 'lucide:target',
+		title: 'Excellence',
+		description:
+			'We are committed to delivering world-class education that meets global industry standards.',
+	},
+	{
+		icon: 'lucide:users',
+		title: 'Community',
+		description:
+			'Building a supportive learning environment where everyone grows together.',
+	},
+	{
+		icon: 'lucide:lightbulb',
+		title: 'Innovation',
+		description:
+			'Staying ahead with cutting-edge curriculum and teaching methodologies.',
+	},
+	{
+		icon: 'lucide:heart',
+		title: 'Impact',
+		description:
+			'Transforming lives through accessible, practical, and career-focused education.',
+	},
 ];

@@ -1,6 +1,8 @@
 'use client';
+
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { courses } from '@/app/utils/utils';
 
@@ -8,14 +10,12 @@ const Programs = () => {
 	const [selectedCategory, setSelectedCategory] = useState('All');
 	const [selectedLevel, setSelectedLevel] = useState('All');
 
-	// Get unique categories and levels
 	const categories = [
 		'All',
 		...new Set(courses.map((course) => course.category)),
 	];
 	const levels = ['All', ...new Set(courses.map((course) => course.level))];
 
-	// Filter courses
 	const filteredCourses = courses.filter((course) => {
 		const matchesCategory =
 			selectedCategory === 'All' || course.category === selectedCategory;
@@ -25,9 +25,9 @@ const Programs = () => {
 	});
 
 	return (
-		<div className='min-h-screen py-24'>
+		<div className='min-h-screen'>
 			{/* Hero Section */}
-			<section className='bg-linear-to-br from-primary/10 via-white to-primary/5 py-20'>
+			<section className='bg-gradient-to-br from-primary/10 via-white to-primary/5 py-20'>
 				<div className='px-4 md:px-14'>
 					<div className='inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-sm font-semibold text-primary mb-6'>
 						<Icon icon='lucide:book-open' />
@@ -122,16 +122,6 @@ const Programs = () => {
 
 						{/* Courses Grid */}
 						<div className='flex-1'>
-							{/* <div className='mb-6 flex items-center justify-between'>
-								<p className='text-foreground/70'>
-									Showing{' '}
-									<span className='font-semibold text-foreground'>
-										{filteredCourses.length}
-									</span>{' '}
-									program{filteredCourses.length !== 1 ? 's' : ''}
-								</p>
-							</div> */}
-
 							<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
 								{filteredCourses.map((course) => (
 									<div
@@ -146,7 +136,7 @@ const Programs = () => {
 												className='object-cover'
 											/>
 
-											<div className='absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent' />
+											<div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent' />
 
 											{/* Category */}
 											<span className='absolute top-4 left-4 bg-white/95 px-3 py-1 rounded-full text-xs font-semibold'>
@@ -184,9 +174,11 @@ const Programs = () => {
 												</span>
 											</div>
 
-											<button className='w-full mt-4 bg-primary/10 text-primary py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition'>
-												Learn More
-											</button>
+											<Link href={`/programs/${course.id}`}>
+												<button className='w-full mt-4 bg-primary/10 text-primary py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition'>
+													Learn More
+												</button>
+											</Link>
 										</div>
 									</div>
 								))}

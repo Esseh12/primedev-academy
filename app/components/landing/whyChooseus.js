@@ -21,26 +21,21 @@ const WhyChooseUs = () => {
 					{/* Content Wrapper */}
 					<div className='relative z-10'>
 						{/* Header */}
-						<div className='text-center px-8 pt-16 pb-12 border-b border-white/10'>
+						<div className='text-center px-8 pt-16 pb-8 border-b border-white/10'>
 							<div className='inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm font-semibold text-white mb-6 backdrop-blur'>
 								<Icon
 									icon='lucide:sparkles'
 									className='text-base'
 								/>
-								<span>Why Choose PrimeDev</span>
+								<span>Why PrimeDev</span>
 							</div>
 
 							<h2 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6'>
-								Everything You Need to
+								Learn What Actually
 								<span className='block text-slate-200 mt-2'>
-									Launch Your Career
+									Matters in the Real World
 								</span>
 							</h2>
-
-							<p className='text-xl text-white max-w-3xl mx-auto font-light leading-relaxed'>
-								Join thousands of graduates who transformed their careers with
-								our comprehensive bootcamp program
-							</p>
 						</div>
 
 						{/* Features Grid */}
@@ -53,10 +48,10 @@ const WhyChooseUs = () => {
 										animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
 									}}>
 									{/* Icon */}
-									<div className='w-14 h-14 bg-lightPrimary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300 border border-primary'>
+									<div className='w-12 h-12 bg-lightPrimary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 border border-primary'>
 										<Icon
 											icon={feature.icon}
-											className='text-3xl text-primary transition-colors duration-300'
+											className='text-2xl text-primary'
 										/>
 									</div>
 
@@ -67,14 +62,6 @@ const WhyChooseUs = () => {
 									<p className='text-foreground leading-relaxed'>
 										{feature.description}
 									</p>
-
-									{/* Hover Arrow */}
-									<div className='absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-										<Icon
-											icon='lucide:arrow-right'
-											className='text-xl text-foreground'
-										/>
-									</div>
 								</div>
 							))}
 						</div>
@@ -82,27 +69,18 @@ const WhyChooseUs = () => {
 						{/* Bottom CTA */}
 						<div className='bg-white/5 px-8 py-12 text-center border-t border-white/10 backdrop-blur'>
 							<h3 className='text-2xl sm:text-3xl font-bold text-slate-50 mb-4'>
-								Ready to Start Your Journey?
+								Start Building With Intention
 							</h3>
+
 							<p className='text-slate-300/80 mb-8 max-w-2xl mx-auto'>
-								Join our next cohort and get access to exclusive bonuses worth
-								$2,000
+								Join our next cohort and become part of a focused, job-oriented
+								developer community where growth is intentional and practical.
 							</p>
 
 							<div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
 								<Link
-									href='/apply'
-									className='group inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300'>
-									<span>Apply Now</span>
-									<Icon
-										icon='lucide:arrow-right'
-										className='text-xl group-hover:translate-x-1 transition-transform'
-									/>
-								</Link>
-
-								<Link
 									href='/demo'
-									className='inline-flex items-center justify-center gap-3 bg-transparent text-slate-200 px-8 py-4 rounded-xl font-semibold text-lg border border-white/20 hover:bg-white/10 transition-all duration-300'>
+									className='group inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300'>
 									<Icon
 										icon='lucide:calendar'
 										className='text-xl'

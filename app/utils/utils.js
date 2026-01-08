@@ -17,9 +17,8 @@ export const navItems = [
 	{ name: 'Home', href: '/', icon: 'lucide:home' },
 	{ name: 'Programs', href: '/programs', icon: 'lucide:book-open' },
 	{ name: 'About', href: '/about-us', icon: 'lucide:info' },
-	// { name: 'Instructors', href: '/instructors', icon: 'lucide:users' },
-	{ name: 'Success Stories', href: '/success', icon: 'lucide:trophy' },
-	{ name: 'Apply Now', href: '/apply', icon: 'lucide:rocket' },
+	{ name: 'FAQ', href: '/faq', icon: 'lucide:help-circle' },
+	{ name: 'Contact', href: '/contact', icon: 'lucide:mail' },
 ];
 
 export const avatars = [
@@ -76,7 +75,7 @@ export const courses = [
 		description:
 			'Learn HTML, CSS, JavaScript, and modern frontend practices to build responsive and user-friendly web interfaces.',
 		image: '/frontend.jpg',
-		duration: '12 weeks',
+		duration: '12 Months',
 		level: 'Beginner to Intermediate',
 		students: '1,200',
 		price: '₦20,000',
@@ -151,7 +150,7 @@ export const courses = [
 		description:
 			'Build powerful server-side applications using Python or JavaScript, APIs, databases, and authentication systems.',
 		image: '/backend.jpg',
-		duration: '12 weeks',
+		duration: '12 Months',
 		level: 'Beginner to Intermediate',
 		students: '980',
 		price: '₦20,000',
@@ -217,7 +216,7 @@ export const courses = [
 		description:
 			'Master React.js by building dynamic, scalable, and high-performance user interfaces with real-world projects.',
 		image: '/react.jpg',
-		duration: '8 weeks',
+		duration: '1 Month',
 		level: 'Intermediate',
 		students: '1,450',
 		price: '₦20,000',
@@ -288,7 +287,7 @@ export const courses = [
 		description:
 			'Learn Next.js for server-side rendering, routing, and building fast, SEO-friendly production applications.',
 		image: '/next.jpg',
-		duration: '8 weeks',
+		duration: '1 Month',
 		level: 'Intermediate',
 		students: '870',
 		price: '₦20,000',
@@ -354,82 +353,105 @@ export const testimonials = [
 	{
 		id: 1,
 		name: 'Adewale Johnson',
-		role: 'Full-Stack Developer',
-		company: 'Flutterwave',
+		role: 'Frontend Developer',
+		company: 'Beta Learner',
 		image: '/avatar2.jpg',
 		rating: 5,
-		text: 'PrimeDev transformed my career completely! I went from having zero coding knowledge to landing a six-figure role at Flutterwave. The instructors were incredibly supportive, and the curriculum was exactly what the industry needs.',
+		text: 'The way PrimeDev breaks down complex concepts is refreshing. The curriculum is well-structured, beginner-friendly, and very practical. Even before launch, I can tell this is going to help a lot of people get started in tech.',
 	},
 	{
 		id: 2,
 		name: 'Chioma Okafor',
-		role: 'UI/UX Designer',
-		company: 'Paystack',
+		role: 'Product Designer',
+		company: 'Curriculum Reviewer',
 		image: '/avatar1.jpg',
 		rating: 5,
-		text: 'Best investment I ever made in myself. The hands-on projects and real-world experience prepared me perfectly for the job market. Within 3 weeks of graduating, I had multiple offers. The community is amazing!',
+		text: 'What stood out to me is the focus on real-world thinking, not just tutorials. The learning flow makes sense, and the projects feel like things you would actually build on a real job.',
 	},
 	{
 		id: 3,
 		name: 'Ibrahim Musa',
-		role: 'Product Designer',
-		company: 'Kuda Bank',
+		role: 'Aspiring Software Engineer',
+		company: 'Early Access Student',
 		image: '/avatar4.jpg',
 		rating: 5,
-		text: "The mentorship and career support at PrimeDev is unmatched. They don't just teach you to code or design - they prepare you for the actual workplace. I'm now designing products used by millions of Nigerians!",
+		text: 'PrimeDev feels intentional. The explanations are clear, the roadmap is realistic, and it doesn’t overwhelm beginners. I wish something like this existed when I first tried to learn tech.',
 	},
 ];
 
 export const faqs = [
 	{
 		id: 1,
-		question: 'Can I enroll in multiple courses at once?',
+		question: 'Do I need any prior coding experience?',
 		answer:
-			'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience. Our platform allows you to manage your learning pace across different programs.',
+			'No. Our programs are designed for absolute beginners as well as learners with some experience. We start from the basics and gradually build up to more advanced concepts.',
 	},
 	{
 		id: 2,
-		question: 'What kind of support can I expect from instructors?',
+		question: 'What programs does PrimeDev Academy offer?',
 		answer:
-			"You'll receive comprehensive support including live Q&A sessions, one-on-one mentorship, code reviews, and 24/7 access to our community forum. Our instructors are industry professionals committed to your success.",
+			'We offer Frontend Development, Backend Development, and Tech Nano Degrees such as React.js, Next.js, and Node.js.',
 	},
 	{
 		id: 3,
-		question:
-			'Are the courses self-paced or do they have specific start and end dates?',
+		question: 'Is PrimeDev Academy online or physical?',
 		answer:
-			'Our courses offer a flexible hybrid model. While cohorts have specific start dates for live sessions and group projects, you can access recorded lectures and materials anytime. Complete assignments at your own pace within the cohort timeline.',
+			'PrimeDev Academy is fully online, so you can learn from anywhere in the world.',
 	},
 	{
 		id: 4,
-		question: 'Are there any prerequisites for the courses?',
+		question: 'How are the classes structured?',
 		answer:
-			'Prerequisites vary by course. Most beginner courses require no prior experience. Intermediate and advanced courses may require basic programming knowledge. Check each course page for specific requirements.',
+			'Learning is hands-on and project-based. You’ll work on real projects, assignments, and practical exercises to reinforce what you learn.',
 	},
 	{
 		id: 5,
-		question: 'Can I download the course materials for offline access?',
+		question: 'How much time do I need to commit?',
 		answer:
-			"Yes! All course materials including videos, slides, and resources are downloadable. You'll have lifetime access to all materials and any future updates to the curriculum.",
+			'You’ll need to dedicate consistent weekly time to learning and practice. Commitment matters more than speed.',
 	},
 	{
 		id: 6,
-		question: 'What is the refund policy?',
+		question: 'Will I build real projects?',
 		answer:
-			"We offer a 14-day money-back guarantee. If you're not satisfied within the first two weeks, you can request a full refund, no questions asked. After 14 days, refunds are handled on a case-by-case basis.",
+			'Yes. Every program includes real-world projects that you can add to your portfolio.',
 	},
 	{
 		id: 7,
-		question: 'Will I receive a certificate upon completion?',
+		question: 'Do you provide certificates?',
 		answer:
-			"Yes! Upon successfully completing a course, you'll receive an industry-recognized certificate that you can share on LinkedIn and add to your resume. Our certificates are respected by top tech companies across Nigeria and globally.",
+			'Yes. Students who complete their program receive a certificate of completion.',
 	},
 	{
 		id: 8,
-		question: 'Do you offer job placement assistance?',
+		question: 'Will PrimeDev help me get a job?',
 		answer:
-			'Absolutely! We provide comprehensive career support including resume reviews, portfolio building, mock interviews, and direct connections to our hiring partners. 95% of our graduates land jobs within 3 months.',
+			'We help you build job-ready skills and a strong portfolio. Students also get access to a job opportunities group. While we don’t promise jobs, we prepare you to apply confidently.',
 	},
+	{
+		id: 9,
+		question: 'What tools or equipment do I need?',
+		answer:
+			'You’ll need a laptop, a stable internet connection, and a willingness to learn and practice.',
+	},
+	{
+		id: 10,
+		question: 'Can I combine this with work or school?',
+		answer:
+			'Yes. Many of our students are working professionals or students. The program is flexible, but discipline is important.',
+	},
+	{
+		id: 11,
+		question: 'How do I apply?',
+		answer:
+			'Simply complete the application form and wait to be contacted with the next steps.',
+	},
+	// {
+	// 	id: 12,
+	// 	question: 'Is there a payment plan?',
+	// 	answer:
+	// 		'Yes, flexible payment options are available. Details will be shared after application.',
+	// },
 ];
 
 export const footerLinks = {
@@ -502,5 +524,32 @@ export const values = [
 		title: 'Impact',
 		description:
 			'Transforming lives through accessible, practical, and career-focused education.',
+	},
+];
+
+export const contactInfo = [
+	{
+		icon: 'lucide:mail',
+		title: 'Email Us',
+		detail: 'hello@techacademy.com',
+		link: 'mailto:hello@techacademy.com',
+	},
+	{
+		icon: 'lucide:phone',
+		title: 'Call Us',
+		detail: '+254 700 000 000',
+		link: 'tel:+254700000000',
+	},
+	{
+		icon: 'lucide:map-pin',
+		title: 'Visit Us',
+		detail: 'Nairobi, Kenya',
+		link: '#',
+	},
+	{
+		icon: 'lucide:clock',
+		title: 'Working Hours',
+		detail: 'Mon - Fri: 9AM - 6PM',
+		link: '#',
 	},
 ];

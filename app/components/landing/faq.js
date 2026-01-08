@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
 import { faqs } from '@/app/utils/utils';
@@ -35,10 +36,10 @@ const FAQSection = () => {
 					<p className='text-xl text-foreground/70 max-w-3xl mx-auto font-light leading-relaxed'>
 						Still you have any questions? Contact our Team via
 						<a
-							href='mailto:support@primedev.com'
+							href='mailto:primedevng@gmail.com'
 							className='text-primary font-semibold hover:underline'>
 							{' '}
-							support@primedev.com
+							primedevng@gmail.com
 						</a>
 					</p>
 				</div>
@@ -106,7 +107,8 @@ const FAQSection = () => {
 							here to help you with any questions about our programs.
 						</p>
 						<div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
-							<button
+							<a
+								href='mailto:primedevng@gmail.com'
 								className='group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300'
 								style={{ backgroundColor: '#c1ff72' }}>
 								<Icon
@@ -114,18 +116,18 @@ const FAQSection = () => {
 									className='text-xl'
 								/>
 								<span className='text-foreground'>Contact Support</span>
-								<Icon
+								{/* <Icon
 									icon='lucide:arrow-right'
 									className='text-xl group-hover:translate-x-1 transition-transform'
-								/>
-							</button>
-							<button className='inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-2 border-white/30 hover:bg-white/20 transition-all duration-300'>
-								<Icon
-									icon='lucide:phone'
-									className='text-xl'
-								/>
-								<span>Schedule a Call</span>
-							</button>
+								/> */}
+							</a>
+							{/* <button className='inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-2 border-white/30 hover:bg-white/20 transition-all duration-300'>
+									<Icon
+										icon='lucide:phone'
+										className='text-xl'
+									/>
+									<span>Schedule a Call</span>
+								</button> */}
 						</div>
 					</div>
 				</div>

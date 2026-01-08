@@ -27,7 +27,7 @@ const Programs = () => {
 	return (
 		<div className='min-h-screen'>
 			{/* Hero Section */}
-			<section className='bg-gradient-to-br from-primary/10 via-white to-primary/5 py-20'>
+			<section className='bg-linear-to-br from-primary/10 via-white to-primary/5 py-20'>
 				<div className='px-4 md:px-14'>
 					<div className='inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-sm font-semibold text-primary mb-6'>
 						<Icon icon='lucide:book-open' />
@@ -145,7 +145,7 @@ const Programs = () => {
 
 											{/* Price */}
 											<span className='absolute top-4 right-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold'>
-												{course.price}
+												{course.price} / Month
 											</span>
 
 											{/* Duration */}
@@ -163,7 +163,7 @@ const Programs = () => {
 
 											<p className='text-foreground/70'>{course.description}</p>
 
-											<div className='flex items-center justify-between text-sm text-foreground/60'>
+											{/* <div className='flex items-center justify-between text-sm text-foreground/60'>
 												<div className='flex items-center gap-2'>
 													<Icon icon='lucide:users' />
 													<span>{course.students} students</span>
@@ -172,7 +172,7 @@ const Programs = () => {
 												<span className='font-semibold text-foreground'>
 													{course.price}
 												</span>
-											</div>
+											</div> */}
 
 											<Link href={`/programs/${course.id}`}>
 												<button className='w-full mt-4 bg-primary/10 text-primary py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition'>

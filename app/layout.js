@@ -15,6 +15,10 @@ export const metadata = {
 		template: '%s | Primede Academy',
 	},
 
+	icons: {
+		icon: '/favicon.ico',
+	},
+
 	description:
 		'Primede Academy is an online learning platform focused on skill development, professional growth, and practical education to help students succeed globally.',
 
@@ -51,7 +55,7 @@ export const metadata = {
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'Primede Academy Online Learning',
+				alt: 'Primedev Academy Online Learning',
 			},
 		],
 		locale: 'en_US',

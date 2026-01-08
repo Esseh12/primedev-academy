@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { Icon } from '@iconify/react';
 import { courses } from '@/app/utils/utils';
 
@@ -69,7 +71,6 @@ const CoursesSection = () => {
 						</div>
 					</div>
 				</div>
-
 				{/* Courses */}
 				<div className='grid lg:grid-cols-3 gap-6'>
 					{getVisibleCourses().map((course, index) => (
@@ -95,14 +96,8 @@ const CoursesSection = () => {
 
 								{/* Price */}
 								<span className='absolute top-4 right-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold'>
-									{course.price}
+									{course.price} / Month
 								</span>
-
-								{/* Duration */}
-								<div className='absolute bottom-4 left-4 flex items-center gap-2 text-white text-sm'>
-									<Icon icon='lucide:clock' />
-									<span>{course.duration}</span>
-								</div>
 							</div>
 
 							{/* Content */}
@@ -115,23 +110,20 @@ const CoursesSection = () => {
 
 								<div className='flex items-center justify-between text-sm text-foreground/60'>
 									<div className='flex items-center gap-2'>
-										<Icon icon='lucide:users' />
-										<span>{course.students} students</span>
+										<Icon icon='ion:time-outline' />
+										<span>{course.duration}</span>
 									</div>
-
-									<span className='font-semibold text-foreground'>
-										{course.price}
-									</span>
 								</div>
 
-								<button className='w-full mt-4 bg-primary/10 text-primary py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition'>
+								<Link
+									href={`/programs/${course.id}`}
+									className='block w-full mt-4 bg-primary/10 text-primary py-3 rounded-xl font-semibold text-center hover:bg-primary hover:text-white transition'>
 									Learn More
-								</button>
+								</Link>
 							</div>
 						</div>
 					))}
 				</div>
-
 				{/* Dots */}
 				<div className='flex justify-center gap-2 mt-12'>
 					{courses.map((_, index) => (

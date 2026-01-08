@@ -88,10 +88,10 @@ export default function ProgramDetails() {
 										icon='lucide:users'
 										className='text-2xl text-primary'
 									/>
-									<div>
+									{/* <div>
 										<div className='text-sm text-foreground/60'>Students</div>
 										<div className='font-semibold'>{course.students}</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>

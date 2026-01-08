@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
 										{testimonial.name}
 									</h4>
 									<p className='text-sm text-foreground/60'>
-										{testimonial.role} at {testimonial.company}
+										{testimonial.role}
 									</p>
 								</div>
 							</div>

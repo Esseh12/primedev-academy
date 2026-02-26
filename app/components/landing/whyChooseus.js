@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const WhyChooseUs = () => {
 	return (
-		<section className='relative -mt-32 pb-24'>
+		<section className='relative  pb-24'>
 			<div className='relative'>
 				{/* Main Card Container */}
-				<div className='relative bg-primary rounded-t-[50px] border border-white/10 overflow-hidden'>
+				<div className='relative bg-primary overflow-hidden'>
 					{/* Noise Background Layer */}
 					<div
 						className='absolute inset-0 z-0 opacity-20 pointer-events-none'

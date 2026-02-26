@@ -72,6 +72,7 @@ export const courses = [
 	{
 		id: 1,
 		title: 'Frontend Engineering',
+		type: 'full',
 		description:
 			'Learn HTML, CSS, JavaScript, and modern frontend practices to build responsive and user-friendly web interfaces.',
 		image: '/frontend.jpg',
@@ -147,6 +148,7 @@ export const courses = [
 	{
 		id: 2,
 		title: 'Backend Engineering (Python or JavaScript)',
+		type: 'full',
 		description:
 			'Build powerful server-side applications using Python or JavaScript, APIs, databases, and authentication systems.',
 		image: '/backend.jpg',
@@ -213,6 +215,7 @@ export const courses = [
 	{
 		id: 3,
 		title: 'React.js',
+		type: 'nano',
 		description:
 			'Master React.js by building dynamic, scalable, and high-performance user interfaces with real-world projects.',
 		image: '/react.jpg',
@@ -284,6 +287,7 @@ export const courses = [
 	{
 		id: 4,
 		title: 'Next.js',
+		type: 'nano',
 		description:
 			'Learn Next.js for server-side rendering, routing, and building fast, SEO-friendly production applications.',
 		image: '/next.jpg',

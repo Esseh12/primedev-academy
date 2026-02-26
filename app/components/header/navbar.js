@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import Banner from '../banner';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
@@ -19,8 +18,6 @@ const Navbar = () => {
 
 	return (
 		<>
-			<Banner />
-
 			<div className='px-4 md:px-8  sticky top-0 z-50 bg-white shadow-md'>
 				<div className='flex justify-between items-center h-20'>
 					{/* Logo */}
@@ -30,9 +27,9 @@ const Navbar = () => {
 						<Image
 							src='/primedev-logo.svg'
 							alt='primedev logo'
-							width={250}
+							width={314}
 							height={50}
-							className='h-10 lg:h-12'
+							className=''
 							priority
 						/>
 					</Link>
@@ -47,23 +44,22 @@ const Navbar = () => {
 											flex items-center gap-2 px-4 py-2 rounded-lg
 											transition-all duration-300 group
 											${
-												pathname === item.href
-													? 'text-primary scale-105'
-													: 'text-gray-700 hover:text-primary'
+												pathname === item.href ?
+													'text-primary scale-105'
+												:	'text-gray-700 hover:text-primary'
 											}
 										`}>
-									<Icon
-										icon={item.icon}
-										className={`text-xl transition-transform duration-300 
-												${pathname === item.href ? '' : 'group-hover:scale-110 group-hover:rotate-12'}
-											`}
-									/>
 									<span className='font-medium'>{item.name}</span>
 								</Link>
 							</li>
 						))}
 					</ul>
 
+					<Link
+						href='/enrol'
+						className='hidden md:block bg-primary text-white px-6 py-2 rounded-2xl hover:bg-primary-dark transition-colors duration-300 w-50 text-center'>
+						Enrol Now
+					</Link>
 					{/* Mobile Menu Button */}
 					<button
 						onClick={() => setIsOpen(!isOpen)}
@@ -87,9 +83,10 @@ const Navbar = () => {
 							<li
 								key={item.name}
 								style={{
-									animation: isOpen
-										? `slideIn 0.3s ease-out ${index * 0.1}s both`
-										: 'none',
+									animation:
+										isOpen ?
+											`slideIn 0.3s ease-out ${index * 0.1}s both`
+										:	'none',
 								}}>
 								<Link
 									href={item.href}
@@ -98,9 +95,9 @@ const Navbar = () => {
 											flex items-center gap-3 px-4 py-3 rounded-lg
 											transition-all duration-300
 											${
-												pathname === item.href
-													? 'text-primary hover:bg-gray-100 hover:translate-x-2'
-													: 'text-gray-700 hover:bg-gray-100 hover:translate-x-2'
+												pathname === item.href ?
+													'text-primary hover:bg-gray-100 hover:translate-x-2'
+												:	'text-gray-700 hover:bg-gray-100 hover:translate-x-2'
 											}
 										`}>
 									<Icon

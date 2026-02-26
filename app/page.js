@@ -9,8 +9,8 @@ export default function Home() {
 		<div className=''>
 			<main className=''>
 				<Hero />
-				<WhyChooseUs />
 				<CoursesSection />
+				<WhyChooseUs />
 				<TestimonialsSection />
 				<FAQSection />
 			</main>
